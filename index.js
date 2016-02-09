@@ -15,7 +15,8 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'myAppId',
   masterKey: process.env.MASTER_KEY || 'myMasterKey',
-  fileKey: process.env.FILE_KEY || 'myFileKey'
+  fileKey: process.env.FILE_KEY || 'myFileKey',
+  facebookAppIds: process.env.FACEBOOK_APP_IDS || 'myFacebookAppId'
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
