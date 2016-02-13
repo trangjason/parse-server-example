@@ -17,7 +17,6 @@ var api = new ParseServer({
   masterKey: process.env.MASTER_KEY || 'myMasterKey',
   fileKey: process.env.FILE_KEY || 'myFileKey',
   facebookAppIds: [process.env.FACEBOOK_APP_IDS || 'myFacebookAppId'],
-  serverURL: 'http://bargenie.herokuapp.com/parse' // Don't forget to change to https if needed
 });
 
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
